@@ -32,7 +32,7 @@ class ClassRegistry(object):
 
     @property
     def registered_classes(self):
-        return self.class_path_cache.values()
+        return list(self.class_path_cache.values())
 
     def register(self, target):
         """ 
